@@ -1,0 +1,42 @@
+/* Ensure dropdown menu always shows below */
+.dropdown-toggle {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Make sure the dropdown menu appears below the button */
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px); /* Ensure menu is always right below the toggle */
+    left: 0;
+    z-index: 1000;
+    display: none;
+    margin-top: 0; /* Ensure consistent spacing */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Show the dropdown menu when the dropdown is open */
+  .show .dropdown-menu {
+    display: block;
+  }
+  
+  /* Style individual items */
+  .dropdown-item {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  /* Hover effect on dropdown items */
+  .dropdown-item:hover {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.2s ease;
+  }
+  

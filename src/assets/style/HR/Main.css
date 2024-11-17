@@ -1,0 +1,24 @@
+.pag_item {
+    
+    width: 100%;
+  }
+
+  .pag_item .page-link{
+    border: none; /* Loại bỏ mọi viền */
+    border-bottom: 2px solid transparent; /* Khởi đầu với viền dưới trong suốt */
+    font-weight: bold;
+    border-radius: 0; /* Bỏ bo góc */
+    padding-bottom: 5px; /* Khoảng cách với nội dung */
+    width: 100%;
+    text-align: center;
+  }
+  
+  .pag_item .page-link:hover {
+    border-bottom: 2px solid #007bff; /* Viền dưới khi hover */
+  }
+  
+  .pag_item.active {
+    border-bottom: 2px solid #0056b3; /* Đổi màu viền dưới khi được chọn */
+    color: white;
+  }
+  
